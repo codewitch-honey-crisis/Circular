@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Circular</name>
+    </assembly>
+    <members>
+        <member name="T:C.CircularBuffer`1">
+            <summary>
+            Represents an implementation of <see cref="T:System.Collections.Generic.IList`1" /> over a circular buffer
+            </summary>
+            <typeparam name="T">The type of item to hold</typeparam>
+        </member>
+        <member name="M:C.CircularBuffer`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Constructs a new instance filled with the items from the specified collection
+            </summary>
+            <param name="collection">The collection to copy into this container</param>
+        </member>
+        <member name="M:C.CircularBuffer`1.#ctor(System.Int32)">
+            <summary>
+            Constructs a new instance with the specified capacity
+            </summary>
+            <param name="capacity">The initial capacity of the container</param>
+        </member>
+        <member name="M:C.CircularBuffer`1.#ctor">
+            <summary>
+            Constructs a new instance
+            </summary>
+        </member>
+        <member name="M:C.CircularBuffer`1.PushFront(`0)">
+            <summary>
+            Inserts an item into the front of the buffer
+            </summary>
+            <param name="item">The item to insert</param>
+        </member>
+        <member name="M:C.CircularBuffer`1.PushBack(`0)">
+            <summary>
+            Inserts an item into the back of the buffer
+            </summary>
+            <param name="item">The item to add</param>
+        </member>
+        <member name="M:C.CircularBuffer`1.PopBack">
+            <summary>
+            Pops an item from the back of the buffer
+            </summary>
+            <returns>The item popped</returns>
+        </member>
+        <member name="M:C.CircularBuffer`1.PopFront">
+            <summary>
+            Pops an item from the front of the buffer
+            </summary>
+            <returns>The item popped</returns>
+        </member>
+        <member name="M:C.CircularBuffer`1.ToArray">
+            <summary>
+            Returns an array with the items of this container
+            </summary>
+            <returns>An array with the items in this container</returns>
+        </member>
+        <member name="M:C.CircularBuffer`1.Trim">
+            <summary>
+            Trims the container to the current count
+            </summary>
+        </member>
+        <member name="P:C.CircularBuffer`1.Capacity">
+            <summary>
+            Indicates the current capacity of the container
+            </summary>
+        </member>
+        <member name="P:C.CircularBuffer`1.Count">
+            <summary>
+            Indicates the count of items in the container
+            </summary>
+        </member>
+        <member name="M:C.CircularBuffer`1.Clear">
+            <summary>
+            Clears the container
+            </summary>
+        </member>
+        <member name="M:C.CircularBuffer`1.Contains(`0)">
+            <summary>
+            Indicates whether the container contains a particular item
+            </summary>
+            <param name="item">The item to search for</param>
+            <returns>True if the item was found, otherwise false</returns>
+        </member>
+        <member name="M:C.CircularBuffer`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the container to the specified array
+            </summary>
+            <param name="array">The destination array</param>
+            <param name="arrayIndex">The index in the destination array at which to begin copying</param>
+        </member>
+        <member name="M:C.CircularBuffer`1.GetEnumerator">
+            <summary>
+            Retrieves an enumerator that can be used to enumerate this instance
+            </summary>
+            <returns>The enumerator</returns>
+        </member>
+        <member name="P:C.CircularBuffer`1.Item(System.Int32)">
+            <summary>
+            Gets or sets a value by index
+            </summary>
+            <param name="index">The index</param>
+            <returns>The value retrieved</returns>
+        </member>
+        <member name="M:C.CircularBuffer`1.IndexOf(`0)">
+            <summary>
+            Indicates the index of the specified item within the container
+            </summary>
+            <param name="item">The item to search for</param>
+            <returns>The index of the item or a negative number if no item was found</returns>
+        </member>
+    </members>
+</doc>
